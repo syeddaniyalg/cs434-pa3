@@ -1,0 +1,65 @@
+{
+  "num_sensors_ca": 8600,
+  "num_sensors_sd": 716,
+  "sensors_found_in_h5": 716,
+  "years": [
+    2020,
+    2021
+  ],
+  "raw_freq": "5min",
+  "freq": "15min",
+  "resample_method": "mean",
+  "timestamps_5min": 210528,
+  "timestamps_15min": 70176,
+  "time_start": "2020-01-01 00:00:00",
+  "time_end": "2021-12-31 23:45:00",
+  "raw_flow_min": 0.0,
+  "raw_flow_max": 999.0,
+  "raw_flow_mean": 217.65867614746094,
+  "flow15_mean": 217.6892852783203,
+  "flow15_std": 168.48118591308594,
+  "flow15_min": 0.0,
+  "flow15_max": 999.0,
+  "zero_fraction_observed_15min": 0.0014600662724313742,
+  "missing_handling": "resample mean ignores missing 5-min readings; remaining gaps forward-filled (causal), leading gaps filled with the sensor's training mean; filled points are masked out of loss and metrics",
+  "plot_sensors": [
+    336,
+    650,
+    309,
+    492,
+    348,
+    377
+  ],
+  "plot_sensor_ids": [
+    "1127045",
+    "1115972",
+    "1108590",
+    "1116431",
+    "1119707",
+    "1108538"
+  ],
+  "plot_sensor_mean_flow": [
+    99.21753692626953,
+    220.0513916015625,
+    322.52008056640625,
+    173.6681365966797,
+    271.3591003417969,
+    368.3594055175781
+  ],
+  "missing_rate_5min": 0.05066183423046582,
+  "missing_rate_15min": 0.050591414053603775,
+  "missing_rate_15min_by_split": {
+    "train": 0.040928871119150105,
+    "val": 0.06072897268777157,
+    "test": 0.060133633824276285
+  },
+  "sensors_fully_missing_15min": 19,
+  "sensors_without_missing_15min": 0,
+  "sensor_missing_rate_15min_median": 0.00011399908800729594,
+  "sensor_missing_rate_15min_max": 1.0,
+  "sensors_over_10pct_missing_15min": 45,
+  "timestamps_all_sensors_missing_5min": 24,
+  "timestamps_all_sensors_missing_15min": 8,
+  "longest_gap_15min_steps_median": 4.0,
+  "longest_gap_15min_steps_max": 70176
+}

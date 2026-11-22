@@ -1,0 +1,10 @@
+\begin{tabular}{llrrrrrrrrrrrrrr}
+\toprule
+Model & Adjacency & MAE & RMSE & MAPE (\%) & Val MAE & Val RMSE & MAE@15min & MAE@30min & MAE@45min & MAE@60min & Training time (s) & Time/epoch (s) & Epochs & Best epoch & Params \\
+\midrule
+Temporal-only & None & 24.200 & 35.682 & 18.643 & 22.238 & 32.382 & 18.518 & 22.490 & 26.043 & 29.748 & 206.001 & 10.300 & 20 & 10 & 13668 \\
+STGNN & Fixed & 23.166 & 34.329 & 17.144 & 21.066 & 30.990 & 18.344 & 21.838 & 24.572 & 27.908 & 249.241 & 11.329 & 22 & 12 & 13668 \\
+STGNN & Adaptive & 20.912 & 31.665 & 13.705 & 18.076 & 27.549 & 17.111 & 19.749 & 22.236 & 24.553 & 234.374 & 11.719 & 20 & 10 & 27988 \\
+STGNN & Hybrid & 21.728 & 32.766 & 13.981 & 19.090 & 28.945 & 17.366 & 20.433 & 23.311 & 25.803 & 173.513 & 11.568 & 15 & 5 & 27989 \\
+\bottomrule
+\end{tabular}

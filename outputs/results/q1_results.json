@@ -1,0 +1,190 @@
+{
+  "part_a": {
+    "formula": "sum_u (w x_u + c) = w * S_v + c * n_v",
+    "first": {
+      "neighbours": [
+        -1,
+        1
+      ],
+      "n": 2,
+      "S": 0,
+      "steady": 0
+    },
+    "second": {
+      "neighbours": [
+        0,
+        0
+      ],
+      "n": 2,
+      "S": 0,
+      "steady": 2
+    },
+    "random_checks": [
+      {
+        "w": 0.30471707975443135,
+        "c": -1.0399841062404955,
+        "agg_first": -2.079968212480991,
+        "agg_second": -2.079968212480991,
+        "equal": true
+      },
+      {
+        "w": 0.7504511958064572,
+        "c": 0.9405647163912139,
+        "agg_first": 1.8811294327824277,
+        "agg_second": 1.8811294327824277,
+        "equal": true
+      },
+      {
+        "w": -1.9510351886538364,
+        "c": -1.302179506862318,
+        "agg_first": -2.604359013724636,
+        "agg_second": -2.604359013724636,
+        "equal": true
+      },
+      {
+        "w": 0.12784040316728537,
+        "c": -0.3162425923435822,
+        "agg_first": -0.6324851846871644,
+        "agg_second": -0.6324851846871644,
+        "equal": true
+      },
+      {
+        "w": -0.016801157504288795,
+        "c": -0.85304392757358,
+        "agg_first": -1.70608785514716,
+        "agg_second": -1.70608785514716,
+        "equal": true
+      }
+    ],
+    "all_equal": true
+  },
+  "part_b": {
+    "K": 8,
+    "base": 9,
+    "phi": {
+      "-1": 1,
+      "0": 9,
+      "+1": 81
+    },
+    "num_triples": 164,
+    "num_distinct_sums": 164,
+    "injective": true,
+    "decoding_correct": true,
+    "max_sum": 648,
+    "base_K_collision_example": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        8,
+        0
+      ]
+    ],
+    "base_K_num_collisions": 2,
+    "nonsteady_phi": "phi(x) = x^2",
+    "nonsteady_correct": true
+  },
+  "part_c": [
+    {
+      "task": "(i) count steady",
+      "method": "sum",
+      "possible": "Yes",
+      "reason": "rho uses coordinate 2",
+      "rule_verified_on_all": true
+    },
+    {
+      "task": "(i) count steady",
+      "method": "mean",
+      "possible": "No",
+      "reason": "[0] and [0, 0] both give (0, 1, 0) but answers are 1 vs 2",
+      "example": {
+        "first": [
+          0
+        ],
+        "second": [
+          0,
+          0
+        ],
+        "vector": "(0, 1, 0)",
+        "answer_first": 1,
+        "answer_second": 2
+      }
+    },
+    {
+      "task": "(i) count steady",
+      "method": "max",
+      "possible": "No",
+      "reason": "[0] and [0, 0] both give (0, 1, 0) but answers are 1 vs 2",
+      "example": {
+        "first": [
+          0
+        ],
+        "second": [
+          0,
+          0
+        ],
+        "vector": "(0, 1, 0)",
+        "answer_first": 1,
+        "answer_second": 2
+      }
+    },
+    {
+      "task": "(ii) more than half slowing",
+      "method": "sum",
+      "possible": "Yes",
+      "reason": "rho uses s1 > s2 + s3",
+      "rule_verified_on_all": true
+    },
+    {
+      "task": "(ii) more than half slowing",
+      "method": "mean",
+      "possible": "Yes",
+      "reason": "rho uses m1 > 1/2",
+      "rule_verified_on_all": true
+    },
+    {
+      "task": "(ii) more than half slowing",
+      "method": "max",
+      "possible": "No",
+      "reason": "[-1, 1] and [-1, -1, 1] both give (1, 0, 1) but answers are False vs True",
+      "example": {
+        "first": [
+          -1,
+          1
+        ],
+        "second": [
+          -1,
+          -1,
+          1
+        ],
+        "vector": "(1, 0, 1)",
+        "answer_first": false,
+        "answer_second": true
+      }
+    },
+    {
+      "task": "(iii) any slowing",
+      "method": "sum",
+      "possible": "Yes",
+      "reason": "rho uses s1 > 0",
+      "rule_verified_on_all": true
+    },
+    {
+      "task": "(iii) any slowing",
+      "method": "mean",
+      "possible": "Yes",
+      "reason": "rho uses m1 > 0",
+      "rule_verified_on_all": true
+    },
+    {
+      "task": "(iii) any slowing",
+      "method": "max",
+      "possible": "Yes",
+      "reason": "rho uses max1 = 1",
+      "rule_verified_on_all": true
+    }
+  ]
+}

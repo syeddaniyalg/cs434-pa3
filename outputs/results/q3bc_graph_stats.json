@@ -1,0 +1,629 @@
+{
+  "q3b": {
+    "num_nodes": 716,
+    "nonzero_entries_total": 18035,
+    "nonzero_diagonal": 716,
+    "nonzero_edges_no_self_loops": 17319,
+    "undirected_edges": 10515,
+    "density": 0.033830136344102826,
+    "symmetric": false,
+    "symmetric_pattern": false,
+    "reciprocal_edge_fraction": 0.7857266585830591,
+    "max_abs_asymmetry": 0.9999998807907104,
+    "weight_min": 0.01000183541327715,
+    "weight_max": 0.9999998807907104,
+    "weight_mean": 0.2970639765262604,
+    "out_degree_mean": 24.18854748603352,
+    "out_degree_median": 20.0,
+    "out_degree_max": 70,
+    "out_degree_min": 0,
+    "in_degree_mean": 24.18854748603352,
+    "isolated_nodes": 3,
+    "weak_components": 7,
+    "strong_components": 17,
+    "sensor_order": "adjacency rows/cols and flow columns both follow sd_meta.csv row order (ca_meta District 11 rows)",
+    "chosen_normalization": "row",
+    "edge_distance_km_mean": 2.279598700268744,
+    "edge_distance_km_median": 2.371061186383964,
+    "weight_vs_distance_corr": -0.37847350298101073,
+    "mean_shortest_path_hops": 8.60427663843521,
+    "diameter_hops": 32.0
+  },
+  "q3c": {
+    "selected_sensor_index": 33,
+    "selected_sensor_id": "1126411",
+    "one_hop_count": 20,
+    "two_hop_new_count": 53,
+    "within_two_hops_count": 73,
+    "neighbours": [
+      {
+        "index": 34,
+        "sensor_id": "1114805",
+        "hop": 1,
+        "weight": 0.9526585340499878,
+        "distance_km": 0.9776058688545068
+      },
+      {
+        "index": 35,
+        "sensor_id": "1114035",
+        "hop": 1,
+        "weight": 0.8244472742080688,
+        "distance_km": 1.935793549206108
+      },
+      {
+        "index": 36,
+        "sensor_id": "1108547",
+        "hop": 1,
+        "weight": 0.7582912445068359,
+        "distance_km": 2.3212997195876595
+      },
+      {
+        "index": 37,
+        "sensor_id": "1118707",
+        "hop": 1,
+        "weight": 0.6342631578445435,
+        "distance_km": 2.9548174274695476
+      },
+      {
+        "index": 125,
+        "sensor_id": "1117871",
+        "hop": 1,
+        "weight": 0.02027428336441517,
+        "distance_km": 3.655364346608158
+      },
+      {
+        "index": 126,
+        "sensor_id": "1108615",
+        "hop": 1,
+        "weight": 0.038699280470609665,
+        "distance_km": 2.9935764492793417
+      },
+      {
+        "index": 127,
+        "sensor_id": "1117818",
+        "hop": 1,
+        "weight": 0.05906295031309128,
+        "distance_km": 2.505327407714242
+      },
+      {
+        "index": 128,
+        "sensor_id": "1126426",
+        "hop": 1,
+        "weight": 0.26390689611434937,
+        "distance_km": 0.23880735878922635
+      },
+      {
+        "index": 129,
+        "sensor_id": "1114806",
+        "hop": 1,
+        "weight": 0.460252583026886,
+        "distance_km": 0.9749973834803239
+      },
+      {
+        "index": 130,
+        "sensor_id": "1108711",
+        "hop": 1,
+        "weight": 0.20387274026870728,
+        "distance_km": 1.9290824732464038
+      },
+      {
+        "index": 131,
+        "sensor_id": "1108693",
+        "hop": 1,
+        "weight": 0.12361004948616028,
+        "distance_km": 3.2980365270514835
+      },
+      {
+        "index": 181,
+        "sensor_id": "1111514",
+        "hop": 1,
+        "weight": 0.03915503993630409,
+        "distance_km": 1.4057090272925663
+      },
+      {
+        "index": 184,
+        "sensor_id": "1113486",
+        "hop": 1,
+        "weight": 0.041985925287008286,
+        "distance_km": 1.3792290272956622
+      },
+      {
+        "index": 185,
+        "sensor_id": "1115356",
+        "hop": 1,
+        "weight": 0.08242308348417282,
+        "distance_km": 1.5598077509097936
+      },
+      {
+        "index": 186,
+        "sensor_id": "1115413",
+        "hop": 1,
+        "weight": 0.0497007891535759,
+        "distance_km": 2.0827972672410184
+      },
+      {
+        "index": 187,
+        "sensor_id": "1115432",
+        "hop": 1,
+        "weight": 0.026095028966665268,
+        "distance_km": 2.8340821226766026
+      },
+      {
+        "index": 188,
+        "sensor_id": "1115438",
+        "hop": 1,
+        "weight": 0.012468279339373112,
+        "distance_km": 3.5378340238260817
+      },
+      {
+        "index": 221,
+        "sensor_id": "1116574",
+        "hop": 1,
+        "weight": 0.014679301530122757,
+        "distance_km": 1.3645125917450702
+      },
+      {
+        "index": 222,
+        "sensor_id": "1115528",
+        "hop": 1,
+        "weight": 0.02155083604156971,
+        "distance_km": 1.5441849906329084
+      },
+      {
+        "index": 223,
+        "sensor_id": "1115517",
+        "hop": 1,
+        "weight": 0.03634370490908623,
+        "distance_km": 2.060721028258703
+      },
+      {
+        "index": 21,
+        "sensor_id": "1117748",
+        "hop": 2,
+        "distance_km": 7.412244595891382
+      },
+      {
+        "index": 22,
+        "sensor_id": "1113976",
+        "hop": 2,
+        "distance_km": 7.012479002291896
+      },
+      {
+        "index": 23,
+        "sensor_id": "1117741",
+        "hop": 2,
+        "distance_km": 6.539206432367337
+      },
+      {
+        "index": 24,
+        "sensor_id": "1108603",
+        "hop": 2,
+        "distance_km": 6.049716787187155
+      },
+      {
+        "index": 25,
+        "sensor_id": "1117835",
+        "hop": 2,
+        "distance_km": 5.405631739941212
+      },
+      {
+        "index": 26,
+        "sensor_id": "1117717",
+        "hop": 2,
+        "distance_km": 4.856564975568655
+      },
+      {
+        "index": 27,
+        "sensor_id": "1118078",
+        "hop": 2,
+        "distance_km": 4.924290684993241
+      },
+      {
+        "index": 28,
+        "sensor_id": "1108611",
+        "hop": 2,
+        "distance_km": 4.128468871778139
+      },
+      {
+        "index": 29,
+        "sensor_id": "1108613",
+        "hop": 2,
+        "distance_km": 3.6463809899823696
+      },
+      {
+        "index": 30,
+        "sensor_id": "1114050",
+        "hop": 2,
+        "distance_km": 3.0230430646816213
+      },
+      {
+        "index": 31,
+        "sensor_id": "1108617",
+        "hop": 2,
+        "distance_km": 2.4970241336951413
+      },
+      {
+        "index": 32,
+        "sensor_id": "1118496",
+        "hop": 2,
+        "distance_km": 0.2690409236345916
+      },
+      {
+        "index": 38,
+        "sensor_id": "1118521",
+        "hop": 2,
+        "distance_km": 4.246658280095063
+      },
+      {
+        "index": 39,
+        "sensor_id": "1108665",
+        "hop": 2,
+        "distance_km": 4.962682424049587
+      },
+      {
+        "index": 119,
+        "sensor_id": "1117683",
+        "hop": 2,
+        "distance_km": 7.363367626692407
+      },
+      {
+        "index": 120,
+        "sensor_id": "1108417",
+        "hop": 2,
+        "distance_km": 7.031924841067325
+      },
+      {
+        "index": 121,
+        "sensor_id": "1117734",
+        "hop": 2,
+        "distance_km": 6.315237990573806
+      },
+      {
+        "index": 122,
+        "sensor_id": "1108605",
+        "hop": 2,
+        "distance_km": 5.4056091046929895
+      },
+      {
+        "index": 123,
+        "sensor_id": "1118702",
+        "hop": 2,
+        "distance_km": 5.402351895676822
+      },
+      {
+        "index": 124,
+        "sensor_id": "1108609",
+        "hop": 2,
+        "distance_km": 4.085463180430385
+      },
+      {
+        "index": 182,
+        "sensor_id": "1108728",
+        "hop": 2,
+        "distance_km": 2.2154410707445122
+      },
+      {
+        "index": 183,
+        "sensor_id": "1114540",
+        "hop": 2,
+        "distance_km": 1.367827132675591
+      },
+      {
+        "index": 189,
+        "sensor_id": "1111551",
+        "hop": 2,
+        "distance_km": 4.056385148404047
+      },
+      {
+        "index": 190,
+        "sensor_id": "1115420",
+        "hop": 2,
+        "distance_km": 4.257309179893701
+      },
+      {
+        "index": 191,
+        "sensor_id": "1115426",
+        "hop": 2,
+        "distance_km": 4.75477196214727
+      },
+      {
+        "index": 192,
+        "sensor_id": "1111566",
+        "hop": 2,
+        "distance_km": 5.0439103973140655
+      },
+      {
+        "index": 193,
+        "sensor_id": "1115444",
+        "hop": 2,
+        "distance_km": 5.793931953943308
+      },
+      {
+        "index": 194,
+        "sensor_id": "1116783",
+        "hop": 2,
+        "distance_km": 6.441120975393611
+      },
+      {
+        "index": 220,
+        "sensor_id": "1114546",
+        "hop": 2,
+        "distance_km": 1.3313102828765777
+      },
+      {
+        "index": 224,
+        "sensor_id": "1115555",
+        "hop": 2,
+        "distance_km": 2.8865592735406915
+      },
+      {
+        "index": 225,
+        "sensor_id": "1115565",
+        "hop": 2,
+        "distance_km": 3.5509651761767684
+      },
+      {
+        "index": 226,
+        "sensor_id": "1111552",
+        "hop": 2,
+        "distance_km": 4.045004298911681
+      },
+      {
+        "index": 227,
+        "sensor_id": "1116165",
+        "hop": 2,
+        "distance_km": 4.239589289766276
+      },
+      {
+        "index": 228,
+        "sensor_id": "1115548",
+        "hop": 2,
+        "distance_km": 4.726752183607983
+      },
+      {
+        "index": 229,
+        "sensor_id": "1111540",
+        "hop": 2,
+        "distance_km": 5.017508094506401
+      },
+      {
+        "index": 230,
+        "sensor_id": "1115572",
+        "hop": 2,
+        "distance_km": 5.770577013545715
+      },
+      {
+        "index": 569,
+        "sensor_id": "1121818",
+        "hop": 2,
+        "distance_km": 4.591674008627334
+      },
+      {
+        "index": 570,
+        "sensor_id": "1114450",
+        "hop": 2,
+        "distance_km": 4.175817565543149
+      },
+      {
+        "index": 571,
+        "sensor_id": "1114457",
+        "hop": 2,
+        "distance_km": 4.458634144479706
+      },
+      {
+        "index": 579,
+        "sensor_id": "1113279",
+        "hop": 2,
+        "distance_km": 5.408746351331056
+      },
+      {
+        "index": 580,
+        "sensor_id": "1111539",
+        "hop": 2,
+        "distance_km": 5.391591862967787
+      },
+      {
+        "index": 581,
+        "sensor_id": "1108331",
+        "hop": 2,
+        "distance_km": 5.322673565724647
+      },
+      {
+        "index": 582,
+        "sensor_id": "1111520",
+        "hop": 2,
+        "distance_km": 5.2079648455161305
+      },
+      {
+        "index": 583,
+        "sensor_id": "1121821",
+        "hop": 2,
+        "distance_km": 4.572155254224637
+      },
+      {
+        "index": 584,
+        "sensor_id": "1114463",
+        "hop": 2,
+        "distance_km": 4.438075660311908
+      },
+      {
+        "index": 585,
+        "sensor_id": "1111509",
+        "hop": 2,
+        "distance_km": 4.938367944061549
+      },
+      {
+        "index": 619,
+        "sensor_id": "1121288",
+        "hop": 2,
+        "distance_km": 7.203318289563526
+      },
+      {
+        "index": 620,
+        "sensor_id": "1116112",
+        "hop": 2,
+        "distance_km": 6.465360233326151
+      },
+      {
+        "index": 621,
+        "sensor_id": "1113460",
+        "hop": 2,
+        "distance_km": 6.376314097466463
+      },
+      {
+        "index": 622,
+        "sensor_id": "1108572",
+        "hop": 2,
+        "distance_km": 5.899090600740314
+      },
+      {
+        "index": 674,
+        "sensor_id": "1115921",
+        "hop": 2,
+        "distance_km": 6.438940153616184
+      },
+      {
+        "index": 675,
+        "sensor_id": "1108391",
+        "hop": 2,
+        "distance_km": 6.351830123520447
+      },
+      {
+        "index": 676,
+        "sensor_id": "1115929",
+        "hop": 2,
+        "distance_km": 5.870483919681587
+      }
+    ],
+    "selected_corr_mean_one_hop": 0.8531058693363646,
+    "selected_corr_mean_two_hop": 0.8588037088003576,
+    "selected_corr_mean_all_others": 0.8563819173172362,
+    "selected_local_corr_mean_one_hop": 0.3269928880401601,
+    "selected_local_corr_mean_two_hop": 0.3114926395462389,
+    "selected_local_corr_mean_all_others": -0.030677725537613672,
+    "corr_by_hop_mean": {
+      "1": 0.79502338540694,
+      "2": 0.7986543387797007,
+      "3": 0.8014654898842902,
+      "4": 0.7997715841692418,
+      "5": 0.7878969013377187,
+      "6": 0.790364059024157,
+      "7": 0.7823355695227334,
+      "8": 0.7722264326925055,
+      "9": 0.7728653642369041,
+      "10": 0.7629348975679342,
+      ">10": 0.7793874750315792,
+      "unreachable": 0.6715600564498698
+    },
+    "local_corr_by_hop_mean": {
+      "1": 0.20406115588623638,
+      "2": 0.09819208511033291,
+      "3": 0.0544013254566686,
+      "4": 0.01776989471286705,
+      "5": -0.007508813411074842,
+      "6": -0.019977733887556297,
+      "7": -0.03127964910839348,
+      "8": -0.04269831723905868,
+      "9": -0.02729083150465823,
+      "10": -0.004178967387276787,
+      ">10": -0.028455437901683676,
+      "unreachable": -0.000492262767874467
+    },
+    "correlation_note": "local = train series minus each sensor's time-of-week mean profile and minus the network-wide mean at each time step",
+    "corr_by_hop_count": {
+      "1": 21030,
+      "2": 30150,
+      "3": 36804,
+      "4": 41282,
+      "5": 43036,
+      "6": 41338,
+      "7": 36628,
+      "8": 34646,
+      "9": 30008,
+      "10": 26866,
+      ">10": 153136,
+      "unreachable": 17016
+    },
+    "reachable_fraction_by_hops": [
+      0.033830136344102826,
+      0.093606672656952,
+      0.16221627534476699,
+      0.24001836152674141,
+      0.32201234519670274,
+      0.403533617220768,
+      0.4765382662030707,
+      0.5442864398171661,
+      0.6025061530648123,
+      0.6542094776731648
+    ],
+    "oversmoothing_normalization": "row",
+    "oversmoothing": [
+      {
+        "layers": 0,
+        "mean_pairwise_corr": 0.839153133734837,
+        "mean_corr_with_own_input": 1.0,
+        "across_node_std": 0.42313593620183465
+      },
+      {
+        "layers": 1,
+        "mean_pairwise_corr": 0.9470020579787981,
+        "mean_corr_with_own_input": 0.9556755600180433,
+        "across_node_std": 0.24240825621159093
+      },
+      {
+        "layers": 2,
+        "mean_pairwise_corr": 0.9596501671221636,
+        "mean_corr_with_own_input": 0.938715097533201,
+        "across_node_std": 0.21076378675229035
+      },
+      {
+        "layers": 3,
+        "mean_pairwise_corr": 0.9642790253316541,
+        "mean_corr_with_own_input": 0.9340811341859311,
+        "across_node_std": 0.1965403798733829
+      },
+      {
+        "layers": 4,
+        "mean_pairwise_corr": 0.9669758982551948,
+        "mean_corr_with_own_input": 0.9326563645544592,
+        "across_node_std": 0.18770771402337677
+      },
+      {
+        "layers": 6,
+        "mean_pairwise_corr": 0.9700277738531383,
+        "mean_corr_with_own_input": 0.9317323115867924,
+        "across_node_std": 0.17664382427076067
+      },
+      {
+        "layers": 8,
+        "mean_pairwise_corr": 0.9716685463705892,
+        "mean_corr_with_own_input": 0.9312149301685162,
+        "across_node_std": 0.17003044334136563
+      },
+      {
+        "layers": 12,
+        "mean_pairwise_corr": 0.9733955559101303,
+        "mean_corr_with_own_input": 0.9302508893706118,
+        "across_node_std": 0.16238521547263943
+      },
+      {
+        "layers": 16,
+        "mean_pairwise_corr": 0.9742762090721493,
+        "mean_corr_with_own_input": 0.9295021062062861,
+        "across_node_std": 0.15793173300323396
+      },
+      {
+        "layers": 24,
+        "mean_pairwise_corr": 0.9749787972125427,
+        "mean_corr_with_own_input": 0.9281190716412498,
+        "across_node_std": 0.15330489947277584
+      },
+      {
+        "layers": 32,
+        "mean_pairwise_corr": 0.9750838780993145,
+        "mean_corr_with_own_input": 0.9269929698171818,
+        "across_node_std": 0.15136366878110355
+      }
+    ]
+  }
+}

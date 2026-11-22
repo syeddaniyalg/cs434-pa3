@@ -1,0 +1,564 @@
+{
+  "comparison": [
+    {
+      "Run": "temporal",
+      "Model": "Temporal-only",
+      "Adjacency": "None",
+      "Graph layers": 1,
+      "MAE": 24.199977494629394,
+      "RMSE": 35.68167075093713,
+      "MAPE (%)": 18.643275401490225,
+      "Val MAE": 22.238023747230297,
+      "Val RMSE": 32.38249486307498,
+      "Training time (s)": 206.00080037117004,
+      "Time/epoch (s)": 10.300040018558501,
+      "Epochs": 20,
+      "Best epoch": 10,
+      "Params": 13668,
+      "Alpha": NaN,
+      "MAE@15min": 18.518243427050106,
+      "RMSE@15min": 25.458980707411097,
+      "MAE@30min": 22.489763602895337,
+      "RMSE@30min": 32.31160451436939,
+      "MAE@45min": 26.04344838769054,
+      "RMSE@45min": 38.20601637206666,
+      "MAE@60min": 29.748454560881594,
+      "RMSE@60min": 44.05482196465168
+    },
+    {
+      "Run": "fixed",
+      "Model": "STGNN",
+      "Adjacency": "Fixed",
+      "Graph layers": 1,
+      "MAE": 23.165600831249854,
+      "RMSE": 34.328640494463464,
+      "MAPE (%)": 17.1439243865551,
+      "Val MAE": 21.065938467915053,
+      "Val RMSE": 30.98979230992091,
+      "Training time (s)": 249.24102878570557,
+      "Time/epoch (s)": 11.329137672077525,
+      "Epochs": 22,
+      "Best epoch": 12,
+      "Params": 13668,
+      "Alpha": NaN,
+      "MAE@15min": 18.34412725512608,
+      "RMSE@15min": 25.42344632005639,
+      "MAE@30min": 21.83820810403433,
+      "RMSE@30min": 31.74881107292223,
+      "MAE@45min": 24.57179201159452,
+      "RMSE@45min": 36.51711166918228,
+      "MAE@60min": 27.90827595424448,
+      "RMSE@60min": 41.5449655289307
+    },
+    {
+      "Run": "adaptive",
+      "Model": "STGNN",
+      "Adjacency": "Adaptive",
+      "Graph layers": 1,
+      "MAE": 20.912197818178583,
+      "RMSE": 31.665115448186626,
+      "MAPE (%)": 13.70538736534722,
+      "Val MAE": 18.075657023790054,
+      "Val RMSE": 27.549103748009298,
+      "Training time (s)": 234.37434601783752,
+      "Time/epoch (s)": 11.718717300891877,
+      "Epochs": 20,
+      "Best epoch": 10,
+      "Params": 27988,
+      "Alpha": NaN,
+      "MAE@15min": 17.1107048845337,
+      "RMSE@15min": 24.569527715188826,
+      "MAE@30min": 19.748912743790385,
+      "RMSE@30min": 29.54867394231336,
+      "MAE@45min": 22.236037718201796,
+      "RMSE@45min": 33.79119594535475,
+      "MAE@60min": 24.55313592618845,
+      "RMSE@60min": 37.31068745110453
+    },
+    {
+      "Run": "hybrid",
+      "Model": "STGNN",
+      "Adjacency": "Hybrid",
+      "Graph layers": 1,
+      "MAE": 21.728428111786908,
+      "RMSE": 32.76629160322132,
+      "MAPE (%)": 13.981442102120997,
+      "Val MAE": 19.090036545342038,
+      "Val RMSE": 28.945484064799242,
+      "Training time (s)": 173.51330018043518,
+      "Time/epoch (s)": 11.567553345362345,
+      "Epochs": 15,
+      "Best epoch": 5,
+      "Params": 27989,
+      "Alpha": 0.13037441670894623,
+      "MAE@15min": 17.36602882934291,
+      "RMSE@15min": 25.314351256682574,
+      "MAE@30min": 20.4333939355107,
+      "RMSE@30min": 30.42272243498635,
+      "MAE@45min": 23.311327816345248,
+      "RMSE@45min": 35.07404718943518,
+      "MAE@60min": 25.802961865948774,
+      "RMSE@60min": 38.703646540858045
+    }
+  ],
+  "relative_to_temporal": {
+    "fixed": {
+      "mae_reduction_pct": 4.274287707949707,
+      "rmse_reduction_pct": 3.7919475966190017
+    },
+    "adaptive": {
+      "mae_reduction_pct": 13.58587906612911,
+      "rmse_reduction_pct": 11.256634620017099
+    },
+    "hybrid": {
+      "mae_reduction_pct": 10.213023476534172,
+      "rmse_reduction_pct": 8.170523090315895
+    }
+  },
+  "plot_sensor_mae": [
+    {
+      "run": "temporal",
+      "node": 336,
+      "mae": 14.531243324279785
+    },
+    {
+      "run": "temporal",
+      "node": 650,
+      "mae": 23.174589157104492
+    },
+    {
+      "run": "temporal",
+      "node": 309,
+      "mae": 29.535898208618164
+    },
+    {
+      "run": "fixed",
+      "node": 336,
+      "mae": 13.55083179473877
+    },
+    {
+      "run": "fixed",
+      "node": 650,
+      "mae": 21.799352645874023
+    },
+    {
+      "run": "fixed",
+      "node": 309,
+      "mae": 29.350065231323242
+    },
+    {
+      "run": "adaptive",
+      "node": 336,
+      "mae": 11.243280410766602
+    },
+    {
+      "run": "adaptive",
+      "node": 650,
+      "mae": 18.310009002685547
+    },
+    {
+      "run": "adaptive",
+      "node": 309,
+      "mae": 26.115772247314453
+    },
+    {
+      "run": "hybrid",
+      "node": 336,
+      "mae": 12.161395072937012
+    },
+    {
+      "run": "hybrid",
+      "node": 650,
+      "mae": 19.96385383605957
+    },
+    {
+      "run": "hybrid",
+      "node": 309,
+      "mae": 27.918336868286133
+    }
+  ],
+  "hour_of_day_test_mae": {
+    "temporal": [
+      19.556876897755,
+      14.832657463316202,
+      13.523838888485148,
+      15.234466575363367,
+      17.79997417928392,
+      28.910547543012754,
+      31.651011552832532,
+      35.16375329618441,
+      31.622206978606812,
+      31.42494367797668,
+      26.8580222345652,
+      24.42710434486238,
+      21.868551529178113,
+      23.894479340581263,
+      33.260137265299505,
+      26.018612230075323,
+      25.592544531952782,
+      28.02249321169844,
+      33.14084544216663,
+      23.879359815014606,
+      17.59980086607004,
+      17.22594527408157,
+      18.934812713944062,
+      20.28426928578854
+    ],
+    "fixed": [
+      17.364466469465857,
+      13.046192503569312,
+      12.083929828320004,
+      14.044374274705111,
+      16.725242176697307,
+      26.121287035930774,
+      31.182480302967296,
+      35.39552073560431,
+      30.469819088487277,
+      29.9663507149873,
+      25.936108581298804,
+      22.934878882494875,
+      21.026106593183766,
+      23.633475101226203,
+      32.72974908964475,
+      26.156743902578498,
+      25.840285964828038,
+      28.17944673472973,
+      31.79191425444403,
+      22.241943027243398,
+      17.29554602240511,
+      16.42780579968985,
+      17.315719454570036,
+      17.984977004703083
+    ],
+    "adaptive": [
+      13.465786311084981,
+      10.079360739127761,
+      9.201830374497401,
+      10.754917859661408,
+      13.873543449951315,
+      19.90138376547328,
+      25.941346201821503,
+      34.451185142205844,
+      25.638680291931088,
+      26.4588430256761,
+      23.943768459728794,
+      22.34775245552578,
+      20.97673599526573,
+      23.532317023305907,
+      32.63751544035707,
+      26.167784175306398,
+      26.00146242188564,
+      28.943227672705866,
+      26.477072499303254,
+      19.927818200720623,
+      16.549778359622614,
+      15.516368850374844,
+      14.88243454376591,
+      14.131556763023735
+    ],
+    "hybrid": [
+      12.964384330787638,
+      9.731429043628284,
+      9.035743708176843,
+      10.478291311855335,
+      13.73809883333053,
+      20.921977190499575,
+      27.663274214541094,
+      34.06031467773919,
+      26.933431419853555,
+      27.76699728564889,
+      25.832088968187286,
+      24.232836017488204,
+      22.574188611069058,
+      25.77479096282078,
+      35.09840975394037,
+      27.698012685474417,
+      28.576012003935105,
+      30.358174971669328,
+      26.55887097004519,
+      20.281669070541284,
+      16.503500271174495,
+      15.67419727479782,
+      15.013786525887308,
+      13.910933357598507
+    ]
+  },
+  "node_gains_vs_temporal": {
+    "fixed": {
+      "nodes_improved_fraction": 0.8722139673105498,
+      "mean_gain": 1.0343700753438485,
+      "median_gain": 1.0949424345544188,
+      "gain_vs_degree_spearman": 0.2933599234165437
+    },
+    "adaptive": {
+      "nodes_improved_fraction": 0.9881129271916791,
+      "mean_gain": 3.2877051006656663,
+      "median_gain": 3.2719191470582203,
+      "gain_vs_degree_spearman": 0.0003616120580563374
+    },
+    "hybrid": {
+      "nodes_improved_fraction": 0.9286775631500743,
+      "mean_gain": 2.4713613308223876,
+      "median_gain": 2.4365444790486244,
+      "gain_vs_degree_spearman": -0.044186709421588456
+    }
+  },
+  "graph_analysis": {
+    "analysis_nodes": 697,
+    "excluded_never_observed": 19,
+    "baselines": {
+      "random_pair": {
+        "fraction_physical_edge": 0.04103794587641617,
+        "fraction_within_2_hops": 0.10012120912284174,
+        "mean_distance_km": 27.062720886606655,
+        "mean_train_corr": 0.0018892363301869829
+      },
+      "physical_edge": {
+        "mean_distance_km": 2.3664127735727942,
+        "mean_train_corr": 0.21556189010887847
+      },
+      "top10_correlated": {
+        "fraction_physical_edge": 0.445480631276901,
+        "mean_distance_km": 8.963036600487536
+      }
+    },
+    "learned": {
+      "adaptive": {
+        "self_weight_mean": 0.003462772350758314,
+        "row_entropy_mean": 3.153347969055176,
+        "max_entropy": 6.546785410760524,
+        "effective_neighbours_mean": 23.414323934876847,
+        "top1": {
+          "fraction_physical_edge": 0.06312769010043041,
+          "fraction_within_2_hops": 0.133428981348637,
+          "fraction_beyond_2_hops": 0.866571018651363,
+          "fraction_unreachable": 0.0746054519368723,
+          "mean_distance_km": 26.600212303716894,
+          "median_distance_km": 22.010322328902586,
+          "mean_train_corr": 0.24763161091377206,
+          "weight_share": 0.20420476182803532
+        },
+        "top5": {
+          "fraction_physical_edge": 0.04591104734576758,
+          "fraction_within_2_hops": 0.10961262553802009,
+          "fraction_beyond_2_hops": 0.8903873744619799,
+          "fraction_unreachable": 0.06025824964131994,
+          "mean_distance_km": 27.37344250780767,
+          "median_distance_km": 23.046290252545745,
+          "mean_train_corr": 0.13677521019787053,
+          "weight_share": 0.5665928582036854
+        },
+        "top10": {
+          "fraction_physical_edge": 0.04375896700143472,
+          "fraction_within_2_hops": 0.10573888091822095,
+          "fraction_beyond_2_hops": 0.8942611190817791,
+          "fraction_unreachable": 0.05208034433285509,
+          "mean_distance_km": 27.83595804154449,
+          "median_distance_km": 23.200638400297446,
+          "mean_train_corr": 0.08565613462146454,
+          "weight_share": 0.7310520429351237
+        },
+        "top20": {
+          "fraction_physical_edge": 0.04124820659971305,
+          "fraction_within_2_hops": 0.10107604017216643,
+          "fraction_beyond_2_hops": 0.8989239598278336,
+          "fraction_unreachable": 0.04576757532281205,
+          "mean_distance_km": 28.17015632982923,
+          "median_distance_km": 23.67249430949308,
+          "mean_train_corr": 0.04509852478127266,
+          "weight_share": 0.8480501325434899
+        },
+        "top10_overlap_with_top10_correlated": 0.025681492109038737,
+        "top10_non_local_edges": {
+          "count": 6233,
+          "mean_train_corr": 0.06177200452524387,
+          "mean_distance_km": 30.616947049841723
+        },
+        "global_strongest_5n_edges": {
+          "fraction_physical_edge": 0.047345767575322814,
+          "fraction_within_2_hops": 0.11506456241032999,
+          "mean_distance_km": 27.456418615424017
+        },
+        "spearman_weight_vs_distance": -0.0006253313632300233,
+        "spearman_weight_vs_train_corr": -0.002334568150438321
+      },
+      "hybrid (adaptive part)": {
+        "self_weight_mean": 0.0006436352850869298,
+        "row_entropy_mean": 2.8403396606445312,
+        "max_entropy": 6.546785410760524,
+        "effective_neighbours_mean": 17.121580076529067,
+        "top1": {
+          "fraction_physical_edge": 0.04878048780487805,
+          "fraction_within_2_hops": 0.12482065997130559,
+          "fraction_beyond_2_hops": 0.8751793400286944,
+          "fraction_unreachable": 0.08608321377331421,
+          "mean_distance_km": 29.057479422900553,
+          "median_distance_km": 25.294349670573602,
+          "mean_train_corr": 0.278957315842474,
+          "weight_share": 0.25896292950535776
+        },
+        "top5": {
+          "fraction_physical_edge": 0.03472022955523673,
+          "fraction_within_2_hops": 0.09411764705882353,
+          "fraction_beyond_2_hops": 0.9058823529411765,
+          "fraction_unreachable": 0.06284074605451936,
+          "mean_distance_km": 29.116363897504435,
+          "median_distance_km": 24.535147350962042,
+          "mean_train_corr": 0.12873583704456654,
+          "weight_share": 0.65781480304822
+        },
+        "top10": {
+          "fraction_physical_edge": 0.03472022955523673,
+          "fraction_within_2_hops": 0.09053084648493544,
+          "fraction_beyond_2_hops": 0.9094691535150645,
+          "fraction_unreachable": 0.055523672883787664,
+          "mean_distance_km": 29.169145000778894,
+          "median_distance_km": 24.65682179735841,
+          "mean_train_corr": 0.08361747640727123,
+          "weight_share": 0.7953734651015513
+        },
+        "top20": {
+          "fraction_physical_edge": 0.036441893830703016,
+          "fraction_within_2_hops": 0.09167862266857962,
+          "fraction_beyond_2_hops": 0.9083213773314204,
+          "fraction_unreachable": 0.05014347202295552,
+          "mean_distance_km": 29.076202821603804,
+          "median_distance_km": 24.593048066460113,
+          "mean_train_corr": 0.040961302149530435,
+          "weight_share": 0.8864958884897328
+        },
+        "top10_overlap_with_top10_correlated": 0.019368723098995694,
+        "top10_non_local_edges": {
+          "count": 6339,
+          "mean_train_corr": 0.06589174249010309,
+          "mean_distance_km": 31.630456840580695
+        },
+        "global_strongest_5n_edges": {
+          "fraction_physical_edge": 0.03242467718794835,
+          "fraction_within_2_hops": 0.09440459110473458,
+          "mean_distance_km": 29.26622493788525
+        },
+        "spearman_weight_vs_distance": 0.02943956081339164,
+        "spearman_weight_vs_train_corr": -0.001409172816743771
+      },
+      "hybrid (combined)": {
+        "self_weight_mean": 0.02323751524090767,
+        "row_entropy_mean": 3.169574737548828,
+        "max_entropy": 6.546785410760524,
+        "effective_neighbours_mean": 23.797362079739667,
+        "top1": {
+          "fraction_physical_edge": 0.04878048780487805,
+          "fraction_within_2_hops": 0.12482065997130559,
+          "fraction_beyond_2_hops": 0.8751793400286944,
+          "fraction_unreachable": 0.08608321377331421,
+          "mean_distance_km": 29.057479422900553,
+          "median_distance_km": 25.294349670573602,
+          "mean_train_corr": 0.278957315842474,
+          "weight_share": 0.2253853621407595
+        },
+        "top5": {
+          "fraction_physical_edge": 0.05308464849354376,
+          "fraction_within_2_hops": 0.11248206599713056,
+          "fraction_beyond_2_hops": 0.8875179340028695,
+          "fraction_unreachable": 0.061406025824964135,
+          "mean_distance_km": 28.506837203341814,
+          "median_distance_km": 23.83674440354412,
+          "mean_train_corr": 0.13946074406913472,
+          "weight_share": 0.5734530521431134
+        },
+        "top10": {
+          "fraction_physical_edge": 0.14964131994261118,
+          "fraction_within_2_hops": 0.20071736011477762,
+          "fraction_beyond_2_hops": 0.7992826398852224,
+          "fraction_unreachable": 0.05136298421807747,
+          "mean_distance_km": 25.93233612131464,
+          "median_distance_km": 21.44771120273934,
+          "mean_train_corr": 0.14321956708107816,
+          "weight_share": 0.7019046033643068
+        },
+        "top20": {
+          "fraction_physical_edge": 0.29153515064562413,
+          "fraction_within_2_hops": 0.3309899569583931,
+          "fraction_beyond_2_hops": 0.6690100430416069,
+          "fraction_unreachable": 0.04189383070301291,
+          "mean_distance_km": 22.074939144303265,
+          "median_distance_km": 16.941569362584218,
+          "mean_train_corr": 0.14740951343295083,
+          "weight_share": 0.8107409265154233
+        },
+        "top10_overlap_with_top10_correlated": 0.07532281205164992,
+        "top10_non_local_edges": {
+          "count": 5571,
+          "mean_train_corr": 0.07057829652378447,
+          "mean_distance_km": 31.758548028920835
+        },
+        "global_strongest_5n_edges": {
+          "fraction_physical_edge": 0.04218077474892396,
+          "fraction_within_2_hops": 0.10329985652797705,
+          "mean_distance_km": 28.963690875072388
+        },
+        "spearman_weight_vs_distance": -0.06226510780858481,
+        "spearman_weight_vs_train_corr": 0.028375414534212808
+      },
+      "fixed (normalized)": {
+        "self_weight_mean": 0.17394357919692993,
+        "row_entropy_mean": 2.535851240158081,
+        "max_entropy": 6.546785410760524,
+        "effective_neighbours_mean": 12.627175032918442,
+        "top1": {
+          "fraction_physical_edge": 0.9885222381635581,
+          "fraction_within_2_hops": 0.9885222381635581,
+          "fraction_beyond_2_hops": 0.011477761836441894,
+          "fraction_unreachable": 0.007173601147776184,
+          "mean_distance_km": 1.9267585357513974,
+          "median_distance_km": 0.9499445625318226,
+          "mean_train_corr": 0.6165139705910463,
+          "weight_share": 0.1407873298721642
+        },
+        "top5": {
+          "fraction_physical_edge": 0.9701578192252511,
+          "fraction_within_2_hops": 0.9701578192252511,
+          "fraction_beyond_2_hops": 0.029842180774748924,
+          "fraction_unreachable": 0.013773314203730272,
+          "mean_distance_km": 2.8781427553647587,
+          "median_distance_km": 1.588825609831489,
+          "mean_train_corr": 0.4185024213495045,
+          "weight_share": 0.4676068824538199
+        },
+        "top10": {
+          "fraction_physical_edge": 0.936441893830703,
+          "fraction_within_2_hops": 0.9385939741750359,
+          "fraction_beyond_2_hops": 0.061406025824964135,
+          "fraction_unreachable": 0.014777618364418939,
+          "mean_distance_km": 3.8533054874354433,
+          "median_distance_km": 1.9312539192498055,
+          "mean_train_corr": 0.3127002434166514,
+          "weight_share": 0.6411254532539007
+        },
+        "top20": {
+          "fraction_physical_edge": 0.7926829268292683,
+          "fraction_within_2_hops": 0.8034433285509326,
+          "fraction_beyond_2_hops": 0.19655667144906744,
+          "fraction_unreachable": 0.015279770444763271,
+          "mean_distance_km": 8.261925199391388,
+          "median_distance_km": 2.5493586076813752,
+          "mean_train_corr": 0.22059218393050983,
+          "weight_share": 0.7559273280577475
+        },
+        "top10_overlap_with_top10_correlated": 0.22611190817790533,
+        "top10_non_local_edges": {
+          "count": 428,
+          "mean_train_corr": 0.11199653279322758,
+          "mean_distance_km": 34.122576698205194
+        },
+        "global_strongest_5n_edges": {
+          "fraction_physical_edge": 1.0,
+          "fraction_within_2_hops": 1.0,
+          "mean_distance_km": 1.7157309447031066
+        },
+        "spearman_weight_vs_distance": -0.3110182093552683,
+        "spearman_weight_vs_train_corr": 0.09961106997336724
+      }
+    }
+  }
+}

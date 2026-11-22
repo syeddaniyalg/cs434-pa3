@@ -1,0 +1,33 @@
+[2026-11-22 12:12:15] run temporal | model temporal | normalization None | params 13668 | device cuda
+[2026-11-22 12:12:15] config {'epochs': 50, 'batch_size': 64, 'lr': 0.001, 'weight_decay': 0.0001, 'hidden': 32, 'embed_dim': 10, 'graph_layers': 1, 'dropout': 0.1, 'topk': 0, 'alpha': 'learn', 'patience': 10, 'clip': 5.0, 'ckpt_every': 2, 'eval_batch_size': 256}
+[2026-11-22 12:12:15] data {'num_nodes': 716, 'num_timestamps': 70176, 'scaler_mean': 202.4622344970703, 'scaler_std': 161.2566680908203, 'splits': {'train': {'start': '2020-01-01 00:00:00', 'end': '2020-12-31 23:45:00', 'timestamps': 35136, 'windows': 35125}, 'val': {'start': '2021-01-01 00:00:00', 'end': '2021-03-31 23:45:00', 'timestamps': 8640, 'windows': 8629}, 'test': {'start': '2021-04-01 00:00:00', 'end': '2021-12-31 23:45:00', 'timestamps': 26400, 'windows': 26389}}}
+[2026-11-22 12:12:15] hardware {'platform': 'Windows-10-10.0.26200-SP0', 'processor': 'Intel64 Family 6 Model 191 Stepping 2, GenuineIntel', 'cpu_cores_physical': 14, 'cpu_cores_logical': 20, 'ram_gb': 15.7, 'python': '3.11.15', 'torch': '2.5.1', 'cuda_available': True, 'gpu': 'NVIDIA GeForce RTX 4050 Laptop GPU', 'gpu_memory_gb': 6.0, 'cuda': '12.4'}
+[2026-11-22 12:12:27] epoch   1 | train MAE 28.801 | val MAE 25.994 RMSE 37.220 MAPE 24.34% | 10.3s | best
+[2026-11-22 12:12:37] epoch   2 | train MAE 20.393 | val MAE 24.909 RMSE 35.911 MAPE 22.88% | 10.0s | best
+[2026-11-22 12:12:47] epoch   3 | train MAE 19.934 | val MAE 23.482 RMSE 33.768 MAPE 22.99% | 10.3s | best
+[2026-11-22 12:12:57] epoch   4 | train MAE 19.581 | val MAE 24.929 RMSE 36.029 MAPE 22.93% | 10.0s
+[2026-11-22 12:13:07] epoch   5 | train MAE 19.426 | val MAE 23.214 RMSE 34.361 MAPE 20.29% | 10.1s | best
+[2026-11-22 12:13:17] epoch   6 | train MAE 19.422 | val MAE 24.328 RMSE 34.766 MAPE 23.69% | 10.1s
+[2026-11-22 12:13:28] epoch   7 | train MAE 19.239 | val MAE 24.238 RMSE 34.002 MAPE 25.35% | 10.2s
+[2026-11-22 12:13:38] epoch   8 | train MAE 19.187 | val MAE 23.722 RMSE 34.877 MAPE 20.63% | 10.2s
+[2026-11-22 12:13:48] epoch   9 | train MAE 19.144 | val MAE 24.690 RMSE 35.437 MAPE 22.99% | 10.2s
+[2026-11-22 12:13:59] epoch  10 | train MAE 19.102 | val MAE 22.238 RMSE 32.382 MAPE 21.57% | 10.3s | best
+[2026-11-22 12:14:09] epoch  11 | train MAE 19.054 | val MAE 26.069 RMSE 37.032 MAPE 25.13% | 10.3s
+[2026-11-22 12:14:19] epoch  12 | train MAE 19.023 | val MAE 22.284 RMSE 32.805 MAPE 20.18% | 10.3s
+[2026-11-22 12:14:29] epoch  13 | train MAE 18.947 | val MAE 25.679 RMSE 36.910 MAPE 23.13% | 10.3s
+[2026-11-22 12:14:40] epoch  14 | train MAE 18.894 | val MAE 23.807 RMSE 34.883 MAPE 21.04% | 10.4s
+[2026-11-22 12:14:50] epoch  15 | train MAE 18.858 | val MAE 22.766 RMSE 33.278 MAPE 20.74% | 10.3s
+[2026-11-22 12:15:01] epoch  16 | train MAE 18.843 | val MAE 23.464 RMSE 33.945 MAPE 21.72% | 10.4s
+[2026-11-22 12:15:11] epoch  17 | train MAE 18.775 | val MAE 23.303 RMSE 33.886 MAPE 21.08% | 10.5s
+[2026-11-22 12:15:22] epoch  18 | train MAE 18.760 | val MAE 22.644 RMSE 32.658 MAPE 21.89% | 10.5s
+[2026-11-22 12:15:32] epoch  19 | train MAE 18.767 | val MAE 22.610 RMSE 33.299 MAPE 19.72% | 10.7s
+[2026-11-22 12:15:43] epoch  20 | train MAE 18.734 | val MAE 23.254 RMSE 33.508 MAPE 22.16% | 10.6s
+[2026-11-22 12:15:43] early stopping at epoch 20, best epoch 10
+[2026-11-22 12:15:43] loaded best model from epoch 10 (val MAE 22.238)
+[2026-11-22 12:15:46] VAL  MAE 22.238 RMSE 32.382 MAPE 21.57%
+[2026-11-22 12:15:46] TEST MAE 24.200 RMSE 35.682 MAPE 18.64%
+[2026-11-22 12:15:46] TEST  15min: MAE 18.518 RMSE 25.459 MAPE 17.12%
+[2026-11-22 12:15:46] TEST  30min: MAE 22.490 RMSE 32.312 MAPE 18.10%
+[2026-11-22 12:15:46] TEST  45min: MAE 26.043 RMSE 38.206 MAPE 19.18%
+[2026-11-22 12:15:46] TEST  60min: MAE 29.748 RMSE 44.055 MAPE 20.18%
+[2026-11-22 12:15:46] training time 206.0s over 20 epochs (10.3s/epoch), saved results to D:\projects\Assignments\CS434\PA3\cs434-pa3\outputs\results\temporal

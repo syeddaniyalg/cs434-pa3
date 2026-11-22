@@ -1,0 +1,41 @@
+[2026-11-22 03:29:42] found runs: ['temporal', 'fixed', 'adaptive', 'hybrid']
+[2026-11-22 03:29:43] Temporal-only  None      MAE 24.431 RMSE 36.789 time 140.9s
+[2026-11-22 03:29:43] STGNN          Fixed     MAE 46.156 RMSE 72.273 time 556.2s
+[2026-11-22 03:29:43] STGNN          Adaptive  MAE 31.789 RMSE 47.753 time 391.2s
+[2026-11-22 03:29:43] STGNN          Hybrid    MAE 29.658 RMSE 44.954 time 256.0s
+[2026-11-22 03:30:10] adaptive: top-10 in road graph 0.055 (random 0.041), within 2 hops 0.122, mean km 26.9 (random 27.1), mean corr 0.720 (random 0.781)
+[2026-11-22 03:30:15] hybrid (adaptive part): top-10 in road graph 0.043 (random 0.041), within 2 hops 0.102, mean km 25.7 (random 27.1), mean corr 0.680 (random 0.781)
+[2026-11-22 03:30:20] hybrid (combined): top-10 in road graph 0.538 (random 0.041), within 2 hops 0.570, mean km 13.4 (random 27.1), mean corr 0.750 (random 0.781)
+[2026-11-22 03:30:20] relative gains vs temporal-only: {'fixed': {'mae_reduction_pct': -88.92131562089448, 'rmse_reduction_pct': -96.45269257708338}, 'adaptive': {'mae_reduction_pct': -30.116053486606233, 'rmse_reduction_pct': -29.801577758768573}, 'hybrid': {'mae_reduction_pct': -21.393217985425977, 'rmse_reduction_pct': -22.19301788352864}}
+[2026-11-22 03:30:20] Q6 analysis done
+[2026-11-22 12:31:22] found runs: ['temporal', 'fixed', 'adaptive', 'hybrid']
+[2026-11-22 12:31:22] Temporal-only  None      MAE 24.200 RMSE 35.682 time 206.0s
+[2026-11-22 12:31:22] STGNN          Fixed     MAE 23.166 RMSE 34.329 time 249.2s
+[2026-11-22 12:31:22] STGNN          Adaptive  MAE 22.869 RMSE 35.016 time 193.1s
+[2026-11-22 12:31:22] STGNN          Hybrid    MAE 21.519 RMSE 32.133 time 370.3s
+[2026-11-22 12:31:35] adaptive: top-10 in road graph 0.045 (random 0.041), within 2 hops 0.109, mean km 26.6 (random 27.1), mean corr 0.005 (random 0.002)
+[2026-11-22 12:31:37] hybrid (adaptive part): top-10 in road graph 0.026 (random 0.041), within 2 hops 0.050, mean km 36.0 (random 27.1), mean corr 0.016 (random 0.002)
+[2026-11-22 12:31:40] hybrid (combined): top-10 in road graph 0.939 (random 0.041), within 2 hops 0.941, mean km 3.8 (random 27.1), mean corr 0.300 (random 0.002)
+[2026-11-22 12:31:40] relative gains vs temporal-only: {'fixed': {'mae_reduction_pct': 4.274287707949707, 'rmse_reduction_pct': 3.7919475966190017}, 'adaptive': {'mae_reduction_pct': 5.498929296607455, 'rmse_reduction_pct': 1.866331812452045}, 'hybrid': {'mae_reduction_pct': 11.078946329341395, 'rmse_reduction_pct': 9.944118952589877}}
+[2026-11-22 12:31:40] Q6 analysis done
+[2026-11-22 12:58:01] found runs: ['temporal', 'fixed', 'adaptive', 'hybrid']
+[2026-11-22 12:58:01] Temporal-only  None      MAE 24.200 RMSE 35.682 time 206.0s
+[2026-11-22 12:58:01] STGNN          Fixed     MAE 23.166 RMSE 34.329 time 249.2s
+[2026-11-22 12:58:01] STGNN          Adaptive  MAE 22.237 RMSE 33.652 time 277.6s
+[2026-11-22 12:58:01] STGNN          Hybrid    MAE 21.715 RMSE 32.283 time 230.5s
+[2026-11-22 12:58:15] adaptive: top-10 in road graph 0.043 (random 0.041), within 2 hops 0.106, mean km 27.4 (random 27.1), mean corr 0.074 (random 0.002)
+[2026-11-22 12:58:18] hybrid (adaptive part): top-10 in road graph 0.039 (random 0.041), within 2 hops 0.096, mean km 28.8 (random 27.1), mean corr 0.085 (random 0.002)
+[2026-11-22 12:58:20] hybrid (combined): top-10 in road graph 0.054 (random 0.041), within 2 hops 0.110, mean km 28.3 (random 27.1), mean corr 0.092 (random 0.002)
+[2026-11-22 12:58:20] relative gains vs temporal-only: {'fixed': {'mae_reduction_pct': 4.274287707949707, 'rmse_reduction_pct': 3.7919475966190017}, 'adaptive': {'mae_reduction_pct': 8.112244169168594, 'rmse_reduction_pct': 5.687173074248093}, 'hybrid': {'mae_reduction_pct': 10.2686766467043, 'rmse_reduction_pct': 9.524940362185307}}
+[2026-11-22 12:58:20] Q6 analysis done
+[2026-11-22 13:17:45] found runs: ['temporal', 'fixed', 'adaptive', 'hybrid']
+[2026-11-22 13:17:46] Temporal-only  None      MAE 24.200 RMSE 35.682 time 206.0s
+[2026-11-22 13:17:46] STGNN          Fixed     MAE 23.166 RMSE 34.329 time 249.2s
+[2026-11-22 13:17:46] STGNN          Adaptive  MAE 20.912 RMSE 31.665 time 234.4s
+[2026-11-22 13:17:46] STGNN          Hybrid    MAE 21.728 RMSE 32.766 time 173.5s
+[2026-11-22 13:17:55] graph analysis on 697 sensors observed in training (19 never-observed excluded)
+[2026-11-22 13:18:00] adaptive: top-10 in road graph 0.044 (random 0.041), within 2 hops 0.106, mean km 27.8 (random 27.1), mean corr 0.086 (random 0.002)
+[2026-11-22 13:18:03] hybrid (adaptive part): top-10 in road graph 0.035 (random 0.041), within 2 hops 0.091, mean km 29.2 (random 27.1), mean corr 0.084 (random 0.002)
+[2026-11-22 13:18:05] hybrid (combined): top-10 in road graph 0.150 (random 0.041), within 2 hops 0.201, mean km 25.9 (random 27.1), mean corr 0.143 (random 0.002)
+[2026-11-22 13:18:05] relative gains vs temporal-only: {'fixed': {'mae_reduction_pct': 4.274287707949707, 'rmse_reduction_pct': 3.7919475966190017}, 'adaptive': {'mae_reduction_pct': 13.58587906612911, 'rmse_reduction_pct': 11.256634620017099}, 'hybrid': {'mae_reduction_pct': 10.213023476534172, 'rmse_reduction_pct': 8.170523090315895}}
+[2026-11-22 13:18:05] Q6 analysis done

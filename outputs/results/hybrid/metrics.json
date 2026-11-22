@@ -1,0 +1,129 @@
+{
+  "name": "hybrid",
+  "model_type": "hybrid",
+  "model": "STGNN",
+  "adjacency": "Hybrid",
+  "normalization": "row",
+  "config": {
+    "epochs": 50,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "hidden": 32,
+    "embed_dim": 10,
+    "graph_layers": 1,
+    "dropout": 0.1,
+    "topk": 0,
+    "alpha": "learn",
+    "patience": 10,
+    "clip": 5.0,
+    "ckpt_every": 2,
+    "eval_batch_size": 256
+  },
+  "seed": 42,
+  "input_len": 8,
+  "output_len": 4,
+  "parameters": 27989,
+  "epochs_run": 15,
+  "best_epoch": 5,
+  "early_stopped": true,
+  "train_time_sec": 173.51330018043518,
+  "train_only_time_sec": 163.7244827747345,
+  "time_per_epoch_sec": 11.567553345362345,
+  "peak_gpu_mem_mb": 822.4072265625,
+  "alpha": 0.13037441670894623,
+  "val": {
+    "mae": 19.090036545342038,
+    "rmse": 28.945484064799242,
+    "mape": 15.659732709442931,
+    "horizons": {
+      "15min": {
+        "mae": 15.581256882304421,
+        "rmse": 22.68007045232316,
+        "mape": 13.829974404436706
+      },
+      "30min": {
+        "mae": 18.092583349131647,
+        "rmse": 26.918916151615758,
+        "mape": 15.70004132573097
+      },
+      "45min": {
+        "mae": 20.304456578490075,
+        "rmse": 30.823444204258593,
+        "mape": 16.17608903929031
+      },
+      "60min": {
+        "mae": 22.381849371442012,
+        "rmse": 34.09202012009677,
+        "mape": 16.932779329129904
+      }
+    }
+  },
+  "test": {
+    "mae": 21.728428111786908,
+    "rmse": 32.76629160322132,
+    "mape": 13.981442102120997,
+    "horizons": {
+      "15min": {
+        "mae": 17.36602882934291,
+        "rmse": 25.314351256682574,
+        "mape": 12.149425891352136
+      },
+      "30min": {
+        "mae": 20.4333939355107,
+        "rmse": 30.42272243498635,
+        "mape": 13.829023393287166
+      },
+      "45min": {
+        "mae": 23.311327816345248,
+        "rmse": 35.07404718943518,
+        "mape": 14.525791243690183
+      },
+      "60min": {
+        "mae": 25.802961865948774,
+        "rmse": 38.703646540858045,
+        "mape": 15.421505364808239
+      }
+    }
+  },
+  "data": {
+    "num_nodes": 716,
+    "num_timestamps": 70176,
+    "scaler_mean": 202.4622344970703,
+    "scaler_std": 161.2566680908203,
+    "sensors_never_observed_in_train": 19,
+    "splits": {
+      "train": {
+        "start": "2020-01-01 00:00:00",
+        "end": "2020-12-31 23:45:00",
+        "timestamps": 35136,
+        "windows": 35125
+      },
+      "val": {
+        "start": "2021-01-01 00:00:00",
+        "end": "2021-03-31 23:45:00",
+        "timestamps": 8640,
+        "windows": 8629
+      },
+      "test": {
+        "start": "2021-04-01 00:00:00",
+        "end": "2021-12-31 23:45:00",
+        "timestamps": 26400,
+        "windows": 26389
+      }
+    }
+  },
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "cpu_cores_physical": 14,
+    "cpu_cores_logical": 20,
+    "ram_gb": 15.7,
+    "python": "3.11.15",
+    "torch": "2.5.1",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "gpu_memory_gb": 6.0,
+    "cuda": "12.4"
+  }
+}

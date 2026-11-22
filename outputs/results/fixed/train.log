@@ -1,0 +1,35 @@
+[2026-11-22 12:16:01] run fixed | model fixed | normalization row | params 13668 | device cuda
+[2026-11-22 12:16:01] config {'epochs': 50, 'batch_size': 64, 'lr': 0.001, 'weight_decay': 0.0001, 'hidden': 32, 'embed_dim': 10, 'graph_layers': 1, 'dropout': 0.1, 'topk': 0, 'alpha': 'learn', 'patience': 10, 'clip': 5.0, 'ckpt_every': 2, 'eval_batch_size': 256}
+[2026-11-22 12:16:01] data {'num_nodes': 716, 'num_timestamps': 70176, 'scaler_mean': 202.4622344970703, 'scaler_std': 161.2566680908203, 'splits': {'train': {'start': '2020-01-01 00:00:00', 'end': '2020-12-31 23:45:00', 'timestamps': 35136, 'windows': 35125}, 'val': {'start': '2021-01-01 00:00:00', 'end': '2021-03-31 23:45:00', 'timestamps': 8640, 'windows': 8629}, 'test': {'start': '2021-04-01 00:00:00', 'end': '2021-12-31 23:45:00', 'timestamps': 26400, 'windows': 26389}}}
+[2026-11-22 12:16:01] hardware {'platform': 'Windows-10-10.0.26200-SP0', 'processor': 'Intel64 Family 6 Model 191 Stepping 2, GenuineIntel', 'cpu_cores_physical': 14, 'cpu_cores_logical': 20, 'ram_gb': 15.7, 'python': '3.11.15', 'torch': '2.5.1', 'cuda_available': True, 'gpu': 'NVIDIA GeForce RTX 4050 Laptop GPU', 'gpu_memory_gb': 6.0, 'cuda': '12.4'}
+[2026-11-22 12:16:14] epoch   1 | train MAE 28.596 | val MAE 26.724 RMSE 38.023 MAPE 26.11% | 11.3s | best
+[2026-11-22 12:16:25] epoch   2 | train MAE 19.886 | val MAE 22.082 RMSE 32.800 MAPE 19.44% | 11.1s | best
+[2026-11-22 12:16:36] epoch   3 | train MAE 19.314 | val MAE 22.704 RMSE 32.893 MAPE 22.12% | 11.3s
+[2026-11-22 12:16:47] epoch   4 | train MAE 19.027 | val MAE 24.327 RMSE 35.054 MAPE 22.88% | 11.3s
+[2026-11-22 12:16:59] epoch   5 | train MAE 18.792 | val MAE 22.103 RMSE 33.191 MAPE 18.49% | 11.3s
+[2026-11-22 12:17:10] epoch   6 | train MAE 18.684 | val MAE 22.576 RMSE 32.745 MAPE 21.51% | 11.3s
+[2026-11-22 12:17:21] epoch   7 | train MAE 18.604 | val MAE 24.491 RMSE 33.985 MAPE 26.31% | 11.3s
+[2026-11-22 12:17:33] epoch   8 | train MAE 18.516 | val MAE 24.511 RMSE 36.337 MAPE 19.93% | 11.3s
+[2026-11-22 12:17:44] epoch   9 | train MAE 18.377 | val MAE 23.293 RMSE 33.493 MAPE 22.14% | 11.3s
+[2026-11-22 12:17:55] epoch  10 | train MAE 18.235 | val MAE 22.120 RMSE 32.092 MAPE 21.03% | 11.5s
+[2026-11-22 12:18:07] epoch  11 | train MAE 18.207 | val MAE 22.929 RMSE 33.504 MAPE 20.44% | 11.9s
+[2026-11-22 12:18:19] epoch  12 | train MAE 18.143 | val MAE 21.066 RMSE 30.990 MAPE 19.72% | 11.3s | best
+[2026-11-22 12:18:30] epoch  13 | train MAE 18.055 | val MAE 24.198 RMSE 35.137 MAPE 21.36% | 11.3s
+[2026-11-22 12:18:41] epoch  14 | train MAE 18.024 | val MAE 21.973 RMSE 32.342 MAPE 19.29% | 11.3s
+[2026-11-22 12:18:53] epoch  15 | train MAE 17.946 | val MAE 23.240 RMSE 33.151 MAPE 22.66% | 11.3s
+[2026-11-22 12:19:04] epoch  16 | train MAE 17.872 | val MAE 21.877 RMSE 32.470 MAPE 18.64% | 11.3s
+[2026-11-22 12:19:15] epoch  17 | train MAE 17.840 | val MAE 22.229 RMSE 32.190 MAPE 20.58% | 11.3s
+[2026-11-22 12:19:27] epoch  18 | train MAE 17.802 | val MAE 21.287 RMSE 31.649 MAPE 18.26% | 11.3s
+[2026-11-22 12:19:38] epoch  19 | train MAE 17.765 | val MAE 21.252 RMSE 31.643 MAPE 18.13% | 11.3s
+[2026-11-22 12:19:49] epoch  20 | train MAE 17.749 | val MAE 23.091 RMSE 32.827 MAPE 22.95% | 11.3s
+[2026-11-22 12:20:00] epoch  21 | train MAE 17.687 | val MAE 22.517 RMSE 32.771 MAPE 20.52% | 11.3s
+[2026-11-22 12:20:12] epoch  22 | train MAE 17.642 | val MAE 22.624 RMSE 33.190 MAPE 19.60% | 11.3s
+[2026-11-22 12:20:12] early stopping at epoch 22, best epoch 12
+[2026-11-22 12:20:12] loaded best model from epoch 12 (val MAE 21.066)
+[2026-11-22 12:20:15] VAL  MAE 21.066 RMSE 30.990 MAPE 19.72%
+[2026-11-22 12:20:15] TEST MAE 23.166 RMSE 34.329 MAPE 17.14%
+[2026-11-22 12:20:15] TEST  15min: MAE 18.344 RMSE 25.423 MAPE 16.31%
+[2026-11-22 12:20:15] TEST  30min: MAE 21.838 RMSE 31.749 MAPE 16.72%
+[2026-11-22 12:20:15] TEST  45min: MAE 24.572 RMSE 36.517 MAPE 16.95%
+[2026-11-22 12:20:15] TEST  60min: MAE 27.908 RMSE 41.545 MAPE 18.60%
+[2026-11-22 12:20:15] training time 249.2s over 22 epochs (11.3s/epoch), saved results to D:\projects\Assignments\CS434\PA3\cs434-pa3\outputs\results\fixed

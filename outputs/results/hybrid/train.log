@@ -1,0 +1,28 @@
+[2026-11-22 13:14:13] run hybrid | model hybrid | normalization row | params 27989 | device cuda
+[2026-11-22 13:14:13] config {'epochs': 50, 'batch_size': 64, 'lr': 0.001, 'weight_decay': 0.0001, 'hidden': 32, 'embed_dim': 10, 'graph_layers': 1, 'dropout': 0.1, 'topk': 0, 'alpha': 'learn', 'patience': 10, 'clip': 5.0, 'ckpt_every': 2, 'eval_batch_size': 256}
+[2026-11-22 13:14:13] data {'num_nodes': 716, 'num_timestamps': 70176, 'scaler_mean': 202.4622344970703, 'scaler_std': 161.2566680908203, 'sensors_never_observed_in_train': 19, 'splits': {'train': {'start': '2020-01-01 00:00:00', 'end': '2020-12-31 23:45:00', 'timestamps': 35136, 'windows': 35125}, 'val': {'start': '2021-01-01 00:00:00', 'end': '2021-03-31 23:45:00', 'timestamps': 8640, 'windows': 8629}, 'test': {'start': '2021-04-01 00:00:00', 'end': '2021-12-31 23:45:00', 'timestamps': 26400, 'windows': 26389}}}
+[2026-11-22 13:14:13] hardware {'platform': 'Windows-10-10.0.26200-SP0', 'processor': 'Intel64 Family 6 Model 191 Stepping 2, GenuineIntel', 'cpu_cores_physical': 14, 'cpu_cores_logical': 20, 'ram_gb': 15.7, 'python': '3.11.15', 'torch': '2.5.1', 'cuda_available': True, 'gpu': 'NVIDIA GeForce RTX 4050 Laptop GPU', 'gpu_memory_gb': 6.0, 'cuda': '12.4'}
+[2026-11-22 13:14:27] epoch   1 | train MAE 27.701 | val MAE 25.401 RMSE 37.626 MAPE 20.47% | 12.5s alpha 0.4297 | best
+[2026-11-22 13:14:39] epoch   2 | train MAE 18.913 | val MAE 21.353 RMSE 32.980 MAPE 14.97% | 11.8s alpha 0.3009 | best
+[2026-11-22 13:14:51] epoch   3 | train MAE 18.042 | val MAE 20.837 RMSE 30.424 MAPE 20.15% | 11.9s alpha 0.2216 | best
+[2026-11-22 13:15:02] epoch   4 | train MAE 17.442 | val MAE 21.390 RMSE 32.046 MAPE 17.54% | 11.3s alpha 0.1648
+[2026-11-22 13:15:13] epoch   5 | train MAE 17.031 | val MAE 19.090 RMSE 28.945 MAPE 15.66% | 11.2s alpha 0.1304 | best
+[2026-11-22 13:15:25] epoch   6 | train MAE 16.675 | val MAE 20.943 RMSE 31.038 MAPE 18.08% | 11.3s alpha 0.1064
+[2026-11-22 13:15:36] epoch   7 | train MAE 16.427 | val MAE 19.776 RMSE 28.988 MAPE 18.57% | 11.4s alpha 0.0897
+[2026-11-22 13:15:48] epoch   8 | train MAE 16.160 | val MAE 22.335 RMSE 32.915 MAPE 18.37% | 11.4s alpha 0.0753
+[2026-11-22 13:15:59] epoch   9 | train MAE 15.999 | val MAE 21.116 RMSE 30.416 MAPE 20.07% | 11.5s alpha 0.0643
+[2026-11-22 13:16:11] epoch  10 | train MAE 15.853 | val MAE 21.117 RMSE 31.611 MAPE 16.51% | 11.5s alpha 0.0550
+[2026-11-22 13:16:22] epoch  11 | train MAE 15.703 | val MAE 20.957 RMSE 31.288 MAPE 17.28% | 11.5s alpha 0.0472
+[2026-11-22 13:16:34] epoch  12 | train MAE 15.613 | val MAE 19.544 RMSE 28.780 MAPE 17.37% | 11.5s alpha 0.0412
+[2026-11-22 13:16:45] epoch  13 | train MAE 15.538 | val MAE 19.577 RMSE 28.758 MAPE 18.11% | 11.5s alpha 0.0365
+[2026-11-22 13:16:57] epoch  14 | train MAE 15.405 | val MAE 20.133 RMSE 29.906 MAPE 17.17% | 11.5s alpha 0.0324
+[2026-11-22 13:17:08] epoch  15 | train MAE 15.349 | val MAE 20.174 RMSE 30.423 MAPE 15.28% | 11.6s alpha 0.0291
+[2026-11-22 13:17:08] early stopping at epoch 15, best epoch 5
+[2026-11-22 13:17:08] loaded best model from epoch 5 (val MAE 19.090)
+[2026-11-22 13:17:11] VAL  MAE 19.090 RMSE 28.945 MAPE 15.66%
+[2026-11-22 13:17:11] TEST MAE 21.728 RMSE 32.766 MAPE 13.98%
+[2026-11-22 13:17:11] TEST  15min: MAE 17.366 RMSE 25.314 MAPE 12.15%
+[2026-11-22 13:17:11] TEST  30min: MAE 20.433 RMSE 30.423 MAPE 13.83%
+[2026-11-22 13:17:11] TEST  45min: MAE 23.311 RMSE 35.074 MAPE 14.53%
+[2026-11-22 13:17:11] TEST  60min: MAE 25.803 RMSE 38.704 MAPE 15.42%
+[2026-11-22 13:17:11] training time 173.5s over 15 epochs (11.6s/epoch), saved results to D:\projects\Assignments\CS434\PA3\cs434-pa3\outputs\results\hybrid

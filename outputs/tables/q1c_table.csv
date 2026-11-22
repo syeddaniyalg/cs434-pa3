@@ -1,0 +1,10 @@
+task,method,possible,reason
+"(i) count steady",sum,Yes,"rho uses coordinate 2"
+"(i) count steady",mean,No,"[0] and [0, 0] both give (0, 1, 0) but answers are 1 vs 2"
+"(i) count steady",max,No,"[0] and [0, 0] both give (0, 1, 0) but answers are 1 vs 2"
+"(ii) more than half slowing",sum,Yes,"rho uses s1 > s2 + s3"
+"(ii) more than half slowing",mean,Yes,"rho uses m1 > 1/2"
+"(ii) more than half slowing",max,No,"[-1, 1] and [-1, -1, 1] both give (1, 0, 1) but answers are False vs True"
+"(iii) any slowing",sum,Yes,"rho uses s1 > 0"
+"(iii) any slowing",mean,Yes,"rho uses m1 > 0"
+"(iii) any slowing",max,Yes,"rho uses max1 = 1"

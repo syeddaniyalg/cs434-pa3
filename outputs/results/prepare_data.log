@@ -1,0 +1,11 @@
+[2026-11-22 02:46:35] CA meta: 8600 sensors, San Diego (district 11): 716 sensors
+[2026-11-22 02:46:44] CA meta: 8600 sensors, San Diego (district 11): 716 sensors
+[2026-11-22 02:52:57] raw files ready, 8.4 GB free on disk
+[2026-11-22 02:52:57] CA meta: 8600 sensors, San Diego (district 11): 716 sensors
+[2026-11-22 02:53:07] ca_his_raw_2020.h5: 105408 rows, 2020-01-01 00:00:00 -> 2020-12-31 23:55:00, sensors found 716/716
+[2026-11-22 02:53:17] ca_his_raw_2021.h5: 105120 rows, 2021-01-01 00:00:00 -> 2021-12-31 23:55:00, sensors found 716/716
+[2026-11-22 02:53:20] 5-min grid: (210528, 716), missing 5.07%
+[2026-11-22 02:53:24] 15-min grid (mean): (70176, 716), missing 5.06%
+[2026-11-22 02:53:24] adjacency (716, 716), plot sensors [336, 650, 309, 492, 348, 377]
+[2026-11-22 02:53:52] saved D:\projects\Assignments\CS434\PA3\cs434-pa3\data\processed\sd_15min.npz
+[2026-11-22 02:53:59] Q3(a) done
